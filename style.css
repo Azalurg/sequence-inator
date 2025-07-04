@@ -1,29 +1,23 @@
 :root {
-    --color-bg: #181818;
-    --color-panel-orange: #e0a15e;
-    --color-panel-green: #5f9156;
-    --color-panel-gray: #b0b0ac;
-    --color-panel-dark: #232323;
-    --color-panel-red: #c44b3c;
-    --color-panel-black: #181818;
-    --color-panel-white: #f5f2eb;
-    --color-accent: #e74c3c;
-    --color-border: #bdb6a3;
-    --color-text-main: #232323;
-    --color-text-light: #f5f2eb;
-    --color-text-gray: #6d6657;
-    --color-btn-main: #e0a15e;
-    --color-btn-green: #5f9156;
-    --color-btn-red: #c44b3c;
-    --color-btn-gray: #b0b0ac;
-    --color-btn-black: #232323;
-    --color-btn-white: #f5f2eb;
+    --color-bg: #000;
+    --color-container-bg: #0a0d0f;
+    --color-box-bg: #b0b0ac;
+    --color-shadow: #c8a885;
+
+    --color-text-dark: #223;
+    --color-text-gray: #6d6b57;
+
+    --color-orange: #e0a15e;
+    --color-green: #5f9156;
+    --color-red: #c44b3c;
+    --color-white: #f5f2eb;
+    
     --font-pixel: 'Jersey 15', Arial, sans-serif;
 }
 
 body {
     background: var(--color-bg);
-    color: var(--color-text-main);
+    color: var(--color-text-dark);
     font-family: var(--font-pixel);
     margin: 0;
     padding: 0;
@@ -33,9 +27,9 @@ body {
 .container {
     max-width: 40rem;
     margin: 5rem auto;
-    background: var(--color-panel-black);
+    background: var(--color-container-bg);
     border-radius: 1rem;
-    box-shadow: 0 0.5rem 1.5rem var(--color-border);
+    box-shadow: 0 0.5rem 1.5rem var(--color-shadow);
     padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
@@ -45,17 +39,14 @@ body {
     text-align: center;
     margin: 0 0 1.5rem 0;
     letter-spacing: 0.1rem;
-    color: var(--color-panel-orange);
-    text-shadow: 0.1rem 0.1rem 0 var(--color-panel-black);
+    color: var(--color-orange);
 }
 
 .box{
     font-family: var(--font-pixel);
-    background: var(--color-panel-gray);
+    background: var(--color-box-bg);
     border-radius: 0.5rem;
     padding: 1rem;
-    /* border: 0.1rem solid var(--color-border); */
-    /* box-shadow: 2px 2px 0 var(--color-border); */
 }
 
 .form .form-row:last-of-type {
@@ -83,11 +74,11 @@ body {
 .select {
     font-family: var(--font-pixel);
     font-size: 1.2rem;
-    border: 2px solid var(--color-panel-white);
+    border: 2px solid var(--color-white);
     border-radius: 0.25rem;
     padding: 0.5rem 0.75rem;
-    background: var(--color-panel-white);
-    color: var(--color-text-main);
+    background: var(--color-white);
+    color: var(--color-text-dark);
     outline: none;
     flex: 1;
     margin-right: 0.5rem;
@@ -96,7 +87,7 @@ body {
 
 .btn {
     font-family: var(--font-pixel);
-    background: var(--color-btn-white);
+    background: var(--color-white);
     font-size: 1.5rem;
     border: none;
     border-radius: 0.5rem;
@@ -106,14 +97,12 @@ body {
 }
 
 .btn:hover {
-    background: var(--color-btn-main);
+    background: var(--color-orange);
 }
 
 .result {
     margin-top: 1.5rem;
     font-size: 1.5rem;
-    color: var(--color-panel-black);
-    box-shadow: 2px 2px 0 var(--color-border);
 }
 
 .result p:nth-of-type(1) {
@@ -126,9 +115,9 @@ body {
 
 
 .error {
-    color: var(--color-btn-red);
+    color: var(--color-red);
 }
 
 .success {
-    color: var(--color-btn-green);
+    color: var(--color-green);
 }
