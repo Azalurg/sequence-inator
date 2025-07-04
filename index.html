@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Proportion Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Proportion Calculator</h1>
+    <form id="propForm">
+        <label for="sequence">Choose a sequence:</label>
+        <select id="sequence"></select>
+
+        <label for="sum">Sum:</label>
+        <input type="number" id="sum" value="100" required>
+
+        <label for="count">Count:</label>
+        <input type="number" id="count" value="5" required>
+
+        <label for="precision">Precision (decimal places):</label>
+        <input type="number" id="precision" value="0" min="0" max="10">
+
+        <button type="submit">Calculate</button>
+    </form>
+
+    <div class="result" id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
