@@ -12,7 +12,6 @@ const props = {
     9: { id: "A000244", name: "Power of 3", numbers: [1, 3, 9, 27, 81, 243, 729, 2187, 6561, 19683, 59049, 177147, 531441, 1594323, 4782969, 14348907] },
 };
 
-
 // Calculation functions
 function calc(sum, count, prop, precision = 2) {
     if (count <= 0 || prop.length === 0) {
@@ -39,7 +38,6 @@ function test(sum, total) {
     return Math.abs(total - sum) < 1e-10;
 }
 
-
 // Populate dropdown
 const seqSelect = document.getElementById('sequence');
 Object.entries(props).forEach(([key, val]) => {
@@ -63,9 +61,9 @@ document.getElementById('propForm').addEventListener('submit', function (e) {
     const total = result.reduce((acc, val) => acc + val, 0);
     const isValid = test(sum, total);
 
-    let output = `<strong>Input sequence:</strong> [${prop.slice(0, count).join(', ')}]<br>`;
-    output += `<strong>Proportional result:</strong> [${result.join(', ')}]<br>`;
-    output += `<strong>Check sum:</strong> ${isValid ? `<span style="color:green">${total}</span>` : `<span class="error">${total}</span>`}`;
+    let output = `<p>Input sequence: [${prop.slice(0, count).join(', ')}]</p>`;
+    output += `<p>Proportional result: [${result.join(', ')}]</p>`;
+    output += `<p>Check sum: ${isValid ? `<span class="success">${total}</span>` : `<span class="error">${total}</span>`}</p>`;
 
     document.getElementById('output').innerHTML = output;
 });

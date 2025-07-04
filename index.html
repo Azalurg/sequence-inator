@@ -3,28 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Proportion Calculator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Proportion Calculator</h1>
-    <form id="propForm">
-        <label for="sequence">Choose a sequence:</label>
-        <select id="sequence"></select>
-
-        <label for="sum">Sum:</label>
-        <input type="number" id="sum" value="100" required>
-
-        <label for="count">Count:</label>
-        <input type="number" id="count" value="5" required>
-
-        <label for="precision">Precision (decimal places):</label>
-        <input type="number" id="precision" value="0" min="0" max="10">
-
-        <button type="submit">Calculate</button>
-    </form>
-
-    <div class="result" id="output"></div>
-
+    <div class="container">
+        <div class="title">ProportionCalc</div>
+        <form id="propForm" class="form box">
+            <div class="form-row">
+                <label for="sequence" class="label">Sequence:</label>
+                <select id="sequence" class="select"></select>
+            </div>
+            <div class="form-row">
+                <label for="sum" class="label">Sum:</label>
+                <input type="number" id="sum" value="100" class="input" required>
+            </div>
+            <div class="form-row">
+                <label for="count" class="label">Count:</label>
+                <input type="number" id="count" value="5" class="input" required>
+            </div>
+            <div class="form-row">
+                <label for="precision" class="label">Precision:</label>
+                <input type="number" id="precision" value="0" min="0" max="10" class="input">
+            </div>
+            <div class="form-row center">
+                <button type="submit" class="btn main">Calculate</button>
+            </div>
+        </form>
+        <div class="result box" id="output"></div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
