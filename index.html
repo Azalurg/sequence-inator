@@ -1,37 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Sequence Inator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jersey+15&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://raw.githubusercontent.com/Azalurg/public/refs/heads/main/icons/web/icon_128.ico"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="title">Sequence Inator</div>
-        <form id="propForm" class="form box">
-            <div class="form-row">
-                <label for="sequence" class="label">Sequence:</label>
-                <select id="sequence" class="select"></select>
-            </div>
-            <div class="form-row">
-                <label for="sum" class="label">Sum:</label>
-                <input type="number" id="sum" value="100" class="input" required>
-            </div>
-            <div class="form-row">
-                <label for="count" class="label">Count:</label>
-                <input type="number" id="count" value="5" class="input" required>
-            </div>
-            <div class="form-row">
-                <label for="precision" class="label">Precision:</label>
-                <input type="number" id="precision" value="0" min="0" max="10" class="input">
-            </div>
-            <div class="form-row center">
-                <button type="submit" class="btn main">Calculate</button>
-            </div>
-        </form>
-        <div class="result box" id="output"></div>
+      <div class="title">Sequence Inator</div>
+      <form id="propForm" class="form box">
+        <div class="form-row">
+          <label for="sequence" class="label">Sequence:</label>
+          <select id="sequence" class="select"></select>
+        </div>
+        <div class="form-row" id="customRow">
+          <label for="custom" class="label">Custom:</label>
+          <input
+            type="text"
+            id="custom"
+            placeholder="e.g.: 1,2,3,4,5"
+            class="select"
+          />
+        </div>
+        <div class="form-row">
+          <label for="sum" class="label">Sum:</label>
+          <input type="number" id="sum" value="100" class="input" required />
+        </div>
+        <div class="form-row">
+          <label for="count" class="label">Count:</label>
+          <input type="number" id="count" value="5" class="input" required />
+        </div>
+        <div class="form-row">
+          <label for="precision" class="label">Precision:</label>
+          <input
+            type="number"
+            id="precision"
+            value="1"
+            min="0"
+            max="10"
+            class="input"
+          />
+        </div>
+        <div class="form-row center">
+          <button type="submit" class="btn main">Calculate</button>
+        </div>
+      </form>
+      <div class="result box" id="output"></div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
