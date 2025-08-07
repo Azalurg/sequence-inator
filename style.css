@@ -1,127 +1,127 @@
 :root {
-  --color-bg: #000;
-  --color-container-bg: #0a0d0f;
-  --color-box-bg: #b0b0ac;
-  --color-shadow: #c8a885;
+    --color-bg: #000;
+    --color-container-bg: #0a0d0f;
+    --color-box-bg: #b0b0ac;
+    --color-shadow: #c8a885;
 
-  --color-text-dark: #223;
-  --color-text-gray: #6d6b57;
+    --color-text-dark: #223;
+    --color-text-gray: #6d6b57;
 
-  --color-orange: #e0a15e;
-  --color-green: #5f9156;
-  --color-red: #c44b3c;
-  --color-white: #f5f2eb;
+    --color-orange: #e0a15e;
+    --color-green: #5f9156;
+    --color-red: #c44b3c;
+    --color-white: #f5f2eb;
 
-  --font-pixel: "Jersey 15", Arial, sans-serif;
+    --font-pixel: "Jersey 15", Arial, sans-serif;
 }
 
 html {
-  font-size: 18px;
+    font-size: 18px;
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-text-dark);
-  font-family: var(--font-pixel);
-  font-size: 1rem;
-  margin: 0;
-  padding: 0;
+    background: var(--color-bg);
+    color: var(--color-text-dark);
+    font-family: var(--font-pixel);
+    font-size: 1rem;
+    margin: 0;
+    padding: 0;
 }
 
 .container {
-  max-width: 40rem;
-  margin: 5rem auto;
-  background: var(--color-container-bg);
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem var(--color-shadow);
-  padding: 2rem 1.5rem 1.5rem 1.5rem;
+    max-width: 40rem;
+    margin: 5rem auto;
+    background: var(--color-container-bg);
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem var(--color-shadow);
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 }
 
 .title {
-  font-family: var(--font-pixel);
-  font-size: 5rem;
-  text-align: center;
-  margin: 0 0 1.5rem 0;
-  letter-spacing: 0.1rem;
-  color: var(--color-orange);
+    font-family: var(--font-pixel);
+    font-size: 5rem;
+    text-align: center;
+    margin: 0 0 1.5rem 0;
+    letter-spacing: 0.1rem;
+    color: var(--color-orange);
 }
 
 .box {
-  font-family: var(--font-pixel);
-  background: var(--color-box-bg);
-  border-radius: 0.5rem;
-  padding: 1rem;
+    font-family: var(--font-pixel);
+    background: var(--color-box-bg);
+    border-radius: 0.5rem;
+    padding: 1rem;
 }
 
 .form .form-row:last-of-type {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .form-row {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .form-row.center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .label {
-  font-size: 1.5rem;
-  color: var(--color-text-gray);
-  width: 6rem;
-  margin-right: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--color-text-gray);
+    width: 6rem;
+    margin-right: 0.5rem;
 }
 
 .input,
 .select {
-  font-family: var(--font-pixel);
-  font-size: 1.2rem;
-  border: 2px solid var(--color-white);
-  border-radius: 0.25rem;
-  padding: 0.5rem 0.75rem;
-  background: var(--color-white);
-  color: var(--color-text-dark);
-  outline: none;
-  flex: 1;
-  margin-right: 0.5rem;
+    font-family: var(--font-pixel);
+    font-size: 1.2rem;
+    border: 2px solid var(--color-white);
+    border-radius: 0.25rem;
+    padding: 0.5rem 0.75rem;
+    background: var(--color-white);
+    color: var(--color-text-dark);
+    outline: none;
+    flex: 1;
+    margin-right: 0.5rem;
 }
 
 .btn {
-  font-family: var(--font-pixel);
-  background: var(--color-white);
-  font-size: 1.5rem;
-  border: none;
-  border-radius: 0.5rem;
-  padding: 0.5rem 1.5rem;
-  cursor: pointer;
-  transition: background 0.6s;
+    font-family: var(--font-pixel);
+    background: var(--color-white);
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1.5rem;
+    cursor: pointer;
+    transition: background 0.6s;
 }
 
 .btn:hover {
-  background: var(--color-orange);
+    background: var(--color-orange);
 }
 
 .result {
-  margin-top: 1.5rem;
-  font-size: 1.5rem;
+    margin-top: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .result p:nth-of-type(1) {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .result p:last-of-type {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .error {
-  color: var(--color-red);
+    color: var(--color-red);
 }
 
 .success {
-  color: var(--color-green);
+    color: var(--color-green);
 }
 
 /* Responsive styles */
